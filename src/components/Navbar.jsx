@@ -77,7 +77,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMobileNavOpen && (
         <div className="md:hidden">
-          <ul className="flex flex-col items-center py-2 font-bold text-xl bg-[#264653] space-y-4">
+          <ul className="flex flex-col items-center py-2 font-bold text-xl space-y-4">
             <li>
               <NavLink
                 to="/"
