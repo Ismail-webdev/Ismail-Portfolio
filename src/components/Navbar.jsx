@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4">
-      <div className="container mx-auto flex justify-between items-center bg-inherit">
+    <nav className="p-4 bg-inherit">
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div>
           <img src={Logo} alt="Logo" className="h-8" />
@@ -76,8 +76,8 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobileNavOpen && (
-        <div className="md:hidden">
-          <ul className="flex flex-col items-center py-2 font-bold text-xl space-y-4">
+        <div className="md:hidden mt-4">
+          <ul className="flex flex-col font-bold items-center space-y-4">
             <li>
               <NavLink
                 to="/"

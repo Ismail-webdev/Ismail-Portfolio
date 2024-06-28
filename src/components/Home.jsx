@@ -47,12 +47,21 @@ const Home = () => {
           designing) exceptional digital experiences. Currently, I’m focused on
           building responsive frontend web applications.
         </p>
-        <div>
+        <div className="flex gap-3">
           <button
             onClick={() => navigate("/projects")}
             className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#c6c7c8] hover:text-black rounded-lg"
           >
             View Projects
+            <span className="group-hover:rotate-90 duration-300">
+              <FiArrowRight className="ml-3" />
+            </span>
+          </button>
+          <button
+            onClick={() => navigate("/contact")}
+            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#c6c7c8] hover:text-black rounded-lg"
+          >
+            Contact Me
             <span className="group-hover:rotate-90 duration-300">
               <FiArrowRight className="ml-3" />
             </span>
